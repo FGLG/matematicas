@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+
+<script src="código.js"></script>
+
+<body>
+    <div class="cont-flexible">
+        <div id="reactivos">
+            <h2 id="tit">Reactivo</h2>
+            <img id="pregunta" src="portada.svg" alt="pregunta" aling= "midle" style="width:300px;"><br>
+            Respuesta: 
+            <select id="resp" onchange="respuesta()">
+                <option id="nada" value=" " selected> </option>
+                <option id="A" value="A">A</option>
+                <option id="B" value="B">B</option>
+                <option id="C" value="C">C</option>
+                <option id="D" value="D">D</option>
+            </select><br>
+            <button type="button" onclick="reactivoAnt()">&laquo;</button>
+            <button type="button" onclick="reactivoSig()">&raquo;</button>
+            <p id="msg"></p></p>
+        </div>
+        <div id="lateral">
+            <span id="fecha"></span>
+            <button type="button" onclick="terminar()">terminar</button>
+            <div id="resultados">
+                <h4>Resultados</h4>
+                Número, álgebra y variación: <span id="eje1">0</span><br>
+                Forma, espacio y medida: <span id="eje2">0</span><br>
+                Análisis de datos: <span id="eje3">0</span><br>
+            </div>
+            <div id="Detalle">
+                <h4>Detalle</h4>
+                <p id="txtDet">Reactivos trabajados:</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

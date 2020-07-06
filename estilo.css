@@ -1,0 +1,17 @@
+.cont-flexible {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    justify-content: space-around;
+}
+#tit{
+    margin-bottom: 0px;
+}
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#txtDet {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
